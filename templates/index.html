@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Laptop Price Prediction</h2>
+    <form action="/predict" method="post">
+        <label>Company:</label>
+        <select name="company">
+            {% for c in companies %}
+            <option value="{{c}}">{{c}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>Type:</label>
+        <select name="typename">
+            {% for t in types %}
+            <option value="{{t}}">{{t}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>Inches:</label>
+        <input type="number" step="0.1" name="inches" value="15.6"><br><br>
+
+        <label>IPS:</label>
+        <select name="ips">
+            <option>Yes</option>
+            <option>No</option>
+        </select><br><br>
+
+        <label>Touchscreen:</label>
+        <select name="touchscreen">
+            <option>Yes</option>
+            <option>No</option>
+        </select><br><br>
+
+        <label>Width:</label>
+        <input type="number" name="width" value="1920"><br><br>
+
+        <label>Height:</label>
+        <input type="number" name="height" value="1080"><br><br>
+
+        <label>CPU:</label>
+        <select name="cpu">
+            {% for c in cpus %}
+            <option value="{{c}}">{{c}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>Generation:</label>
+        <input type="number" step="0.1" name="gen" value="1.0"><br><br>
+
+        <label>RAM:</label>
+        <input type="number" name="ram" value="8"><br><br>
+
+        <label>Storage Type:</label>
+        <select name="storage_type">
+            <option>SSD</option>
+            <option>HDD</option>
+            <option>Hybrid</option>
+            <option>Flash</option>
+        </select><br><br>
+
+        <label>Storage Value (GB):</label>
+        <input type="number" name="storage_value" value="256"><br><br>
+
+        <label>GPU Brand:</label>
+        <select name="gpu_brand">
+            {% for g in gpu_brands %}
+            <option value="{{g}}">{{g}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>GPU:</label>
+        <select name="gpu">
+            {% for g in gpus %}
+            <option value="{{g}}">{{g}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>Operating System:</label>
+        <select name="opsys">
+            {% for o in osys %}
+            <option value="{{o}}">{{o}}</option>
+            {% endfor %}
+        </select><br><br>
+
+        <label>Weight (kg):</label>
+        <input type="number" step="0.1" name="weight" value="1.5"><br><br>
+
+        <label>Model:</label>
+        <select name="model">
+            <option>Linear Regression</option>
+            <option>Polynomial Regression</option>
+            <option>Decision Tree Regression</option>
+            <option>Ridge Regression</option>
+            <option>Lasso Regression</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    
+</body>
+</html>

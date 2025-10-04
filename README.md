@@ -58,7 +58,7 @@ Typical files included in this repo:
 
 ---
 
-##🧩 **Usage (What Inputs Are Required)**
+## 🧩 **Usage (What Inputs Are Required)**
 
 The web app will ask for laptop specifications such as:
 
@@ -84,11 +84,11 @@ The web app will ask for laptop specifications such as:
 
 Entering those features returns a predicted price.
 
-##📈 **Model Performance**
+## 📈 **Model Performance**
 
 R² score: 0.85
 
-##📊 **Use Cases**
+## 📊 **Use Cases**
 
 E-commerce sites to suggest reasonable laptop prices
 
@@ -98,11 +98,15 @@ Benchmarking different laptop configurations
 
 Educational tool to showcase regression modeling
 
-##🙌 **Acknowledgements**
+## 🙌 **Acknowledgements**
 
 Thank you to contributors, dataset providers, and open-source tools (scikit-learn, Streamlit, pandas, etc.).
 
-##📬 **Contact**
+## 📬 **Contact**
 
 GitHub: https://github.com/kiranrathod2
+
+Email: kiranrathod2602@gmail.com
+
+LinkedIn: www.linkedin.com/in/kiran-rathod-605919367
 

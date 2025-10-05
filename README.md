@@ -1,6 +1,7 @@
 # 💻 **Laptop Price Prediction**
 
-A machine learning project to predict the selling price of a laptop based on its specifications.  
+Laptop Price Prediction using multiple regression models.Users can select a model (Linear, Polynomial, Decision Tree, Ridge, Lasso etc.) to generate predictions.
+Deployed with Streamlit for prototyping and Django for web deployment. A machine learning project to predict the selling price of a laptop based on its specifications.  
 Users can input features like RAM, GPU, CPU, brand, etc. and get a price estimate.
 
 ---
